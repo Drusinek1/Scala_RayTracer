@@ -26,11 +26,11 @@ class Sphere(P:List[Double],r:Double) {
   
   def quadratic(A:Double,B:Double,C:Double):List[Double] = {
     
-    val disc = math.sqrt((B*B)-4*(A*C))
-    val y = (-B + disc)/(2*A)
-    val y2 = (-B - disc)/(2*A)
-    val solutions = List(y,y2)
-    solutions
+    val disc = math.sqrt((B*B)-4*(A*C))  // discriminant
+    val y = (-B + disc)/(2*A)  //1rst quadratic solution
+    val y2 = (-B - disc)/(2*A) //2nd quadratic solution
+    val solutions = List(y,y2) 
+    solutions // return solutions
   }
   
   
